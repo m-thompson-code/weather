@@ -48,6 +48,12 @@ function search() {
     // get input's value
     const inputValue = $("#my-input").val();
 
+    if (!inputValue.trim()) {
+        alert("Please type a city");
+        // TODO: Maybe I'd validate that what they typed was a valid city
+        return;
+    }
+
     // Add input's value to searches
     addToSearchHistory(inputValue);
 
