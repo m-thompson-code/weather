@@ -1,12 +1,6 @@
 'use strict';
 
-let searches = [
-    // 'first',
-    // 'second',
-    // 'third',
-];
-
-searches = getSearches();
+let searches = getSearches();
 
 // LocalStorage helpers
 function getSearches() {
@@ -17,12 +11,6 @@ function setSearches() {
     localStorage.setItem("searches", JSON.stringify(searches));
 }
 // END LocalStorage helpers
-
-// Storage array of cities (searches)
-
-// Populate the dom based on these cities
-
-// container-box-left
 
 function renderSearchlist() {
     $('#history').empty();
